@@ -34,6 +34,10 @@ const router = createBrowserRouter([
     element: <Question4ParaGenerator/>,
   },
   {
+    path: "/q5",
+    element: <Question5GitHubApi/>,
+  },
+  {
     path: "/*",
     element: <div>Galat path broo</div>,
   },
