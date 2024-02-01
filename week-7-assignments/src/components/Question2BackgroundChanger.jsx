@@ -34,7 +34,7 @@ function Question2BackgroundChanger() {
   ];
   return (
     <div className={`h-screen w-full ${selectedBg} flex justify-center items-end`}>
-        <div className="flex gap-3 m-5">
+        <div className="flex gap-3 m-5  p-2 rounded-md shadow">
 
         {colors.map(color=><ColorButton key={color.className} colorName={color.colorName} clsName={color.className} setSelectedBg={setSelectedBg}/>)}
         </div>
@@ -51,7 +51,7 @@ function ColorButton({colorName,clsName,setSelectedBg}) {
     }
   return (
     // <div>{colorName},{clsName}</div>
-    <div className={`${clsName} w-30 h-12 px-6 py-3 text-center border-2 border-slate-700 rounded-3xl ${textColor} flex items-center`} onClick={()=>setSelectedBg(clsName)}>
+    <div className={`${clsName} w-30 h-12 px-6 py-3 text-center border-2 border-slate-700 rounded-3xl ${textColor} flex items-center transition ease-in-out duration-300 hover:-translate-y-1.5`} onClick={()=>setSelectedBg(clsName)}>
         <p>{colorName}</p>
     </div>
   )
