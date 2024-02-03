@@ -10,6 +10,7 @@ function HomePage() {
         <Link to={"/q2"}>Click here to go to Question 2</Link>
         <Link to={"/q4"}>Click here to go to Question 4</Link>
         <Link to={"/q5"}>Click here to go to Question 5</Link>
+        <Link to={"/q6"}>Click here to go to Question 6</Link>
       </div>
     </div>
   );
