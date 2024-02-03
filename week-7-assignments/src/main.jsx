@@ -12,6 +12,7 @@ import Question4ParaGenerator from './components/Question4ParaGenerator.jsx';
 import HomePage from './components/HomePage.jsx';
 import Question5GitHubApi from './components/Question5GitHubApi.jsx';
 import Question6OTP from './components/Question6OTP.jsx';
+import Question7BirthdayGreetings from './components/Question7BirthdayGreetings.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/q6",
     element: <Question6OTP/>,
+  },
+  {
+    path: "/q7",
+    element: <Question7BirthdayGreetings/>,
   },
   {
     path: "/*",
